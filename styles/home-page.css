@@ -3,6 +3,7 @@ background-color: #18191b;
 color: #707070;
 font-family: 'Roboto Condensed', sans-serif;
 height: 100vh;
+overflow-x: hidden;
 }
 
 body {
@@ -34,6 +35,19 @@ nav {
     text-align: center;
     font-weight: 500;
     font-size: 30pt;
+    transition: flex 0.3s, color 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.navigation-main-menu-item:hover {
+    flex: 2.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30pt;
+    color:#FFFFFFBF;
 }
 
 .navigation-sub-menu-item {
@@ -43,6 +57,18 @@ nav {
     justify-content: center;
     font-weight: 400;
     font-size: 17pt;
+    transition: flex 0.3s, color 0.1s, font-size 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.navigation-sub-menu-item:hover {
+    flex: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20pt;
+    color:#FFFFFFBF;
 }
 
 .main-content {
